@@ -14,7 +14,7 @@ export function CurrentToast() {
       enterStyle={{ opacity: 0, scale: 0.5, y: -25 }}
       exitStyle={{ opacity: 0, scale: 1, y: -20 }}
       y={isWeb ? '$12' : 0}
-      theme="accent"
+      theme="light_yellow"
       rounded="$6"
       animation="quick"
     >
@@ -43,8 +43,10 @@ export function ToastControl() {
           }}
         >
           Show
+          
         </Button>
         <Button
+        
           onPress={() => {
             toast.hide()
           }}
